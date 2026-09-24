@@ -1,0 +1,59 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    overflow: hidden;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+#image{
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+    height: 200px;
+    width: 200px;
+    box-shadow:  10px -5px 15px 10px rgba(198, 189, 189, 0.8);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1.8px;
+    border-color: whitesmoke;
+    background: url('portrait_23yo_transparent.png') center;
+    background-size: cover;
+    background-position:0px bottom left right;
+    animation: movement 2.5s ease-out 1s 1 forwards ;
+}
+@keyframes movement{
+    from{transform:translateX(0px)}
+    to{transform:translateX(350px)}
+}
+#text{
+    text-transform: capitalize;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    z-index: -1;
+    font-weight:bolder;
+    color:rgb(238, 124, 31);
+    opacity: 0;
+    animation: motion 3s ease-in-out 1s 1 forwards ;
+}
+#text-1{
+    margin: 0;
+    font-size: 3rem;
+    /* font-weight: lighter; */
+}
+#text-2{
+    margin: 0 10%;
+    font-size:1.5rem;
+    font-weight:lighter;
+}
+@keyframes motion {
+    from{transform: translateX(0px);
+    opacity: 0;}
+    to{transform: translate(-300px,-50%);
+    opacity: 1;}
+}
