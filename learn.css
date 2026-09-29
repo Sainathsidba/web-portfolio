@@ -33,10 +33,10 @@ body {
 }
 #text{
     text-transform: capitalize;
-    height: fit-content;
+    height: 140px;
     width: fit-content;
-    position: absolute;
-    z-index: -1;
+    position: relative;
+    z-index: 1;
     font-weight:bolder;
     color:#fc6c26;
     opacity: 0;
@@ -54,18 +54,20 @@ body {
 @keyframes motion {
     from{transform: translateX(0px);
     opacity: 0;}
-    to{transform: translate(-25%,-60%);
+    to{transform: translate(-25%,-50%);
     opacity: 1;}
 }
-#button{
-    display: inline;
+#click{
+    position: absolute;
+    top: 68%;
     width: 100px;
     height: 35px;
-    margin-top: 1.5%;
+    margin-top: 1%;
     margin-left: 70%;
-    color: #fff4d6;
+    color: white;
     font-size: large;
     border-style: none;
     text-transform: capitalize;
     background-color: #fc6c26;
+    cursor: pointer ;
 }
