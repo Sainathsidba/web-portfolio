@@ -34,9 +34,9 @@ body {
 #text{
     text-transform: capitalize;
     height: 140px;
-    width: fit-content;
+    width: 700px;
     position: relative;
-    z-index: 1;
+    z-index: -1;
     font-weight:bolder;
     color:#fc6c26;
     opacity: 0;
@@ -55,7 +55,7 @@ body {
     from{transform: translateX(0px);
     opacity: 0;}
     to{transform: translate(-25%,-50%);
-    opacity: 1;}
+    opacity: 1;z-index: 1;}
 }
 #click{
     position: absolute;
@@ -69,5 +69,11 @@ body {
     border-style: none;
     text-transform: capitalize;
     background-color: #fc6c26;
-    cursor: pointer ;
+    cursor:pointer;
+    opacity: 0;
+    animation: click 3s ease-in-out 24s forwards;
+}
+@keyframes click{
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
