@@ -71,7 +71,7 @@ body {
     background-color: #fc6c26;
     cursor:pointer;
     opacity: 0;
-    animation: click 3s ease-in-out 24s forwards;
+    animation: click 2s ease-in-out 24s forwards;
 }
 @keyframes click{
     from{opacity: 0;}
